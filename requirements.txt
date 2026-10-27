@@ -1,0 +1,32 @@
+# =============================================================================
+# DEPENDENCIAS - PROYECTO LOCK VISUAL BIOMÉTRICO (ModelAeaFotoPAB)
+# Autor: Pablo Ticeran
+# =============================================================================
+
+# IMPORTANTE: Se requiere setuptools < 70 debido a que la librería
+# 'face_recognition_models' utiliza internamente 'pkg_resources',
+# el cual fue removido en versiones de setuptools >= 70.
+setuptools>=65.0.0,<70.0.0
+
+# Procesamiento de imágenes y video por computadora
+opencv-python>=4.8.0
+
+# Biblioteca de Machine Learning y Detección Facial
+dlib>=20.0.1
+
+# Envoltorio de alto nivel sobre dlib para reconocimiento facial
+face-recognition>=1.3.0
+
+# Modelos pre-entrenados para face_recognition (HOG, ResNet, 68-landmarks)
+face-recognition-models>=0.3.0
+
+# Manipulación de matrices y vectores biométricos
+numpy>=1.24.0,<2.0.0
+
+# Procesamiento y lectura de formatos de imagen
+Pillow>=10.0.0
+
+# Enumeración de dispositivos DirectShow y nombres de Webcams (Dashboard)
+pygrabber>=0.2
+comtypes>=1.4.0
+

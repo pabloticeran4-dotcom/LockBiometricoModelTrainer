@@ -1,0 +1,104 @@
+# =============================================================================
+# GITIGNORE - PROYECTO LOCK VISUAL BIOMÉTRICO (ModelAeaFotoPAB)
+# Autor: Pablo Ticeran
+# =============================================================================
+
+# --- 1. ENTORNO VIRTUAL Y DEPENDENCIAS ---
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# --- 2. CACHÉ Y ARCHIVOS GENERADOS POR PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 3. MODELOS ENTRENADOS Y SERIALIZACIONES (.pkl) ---
+# Los archivos binarios pickle contienen vectores biométricos personales y son pesados
+*.pkl
+*.pickle
+*.dat
+*.h5
+*.onnx
+modelo_biometrico.pkl
+
+# --- 4. DATASETS Y DATOS BIOMÉTRICOS PRIVADOS (FOTOS Y RECORTES) ---
+# Protege tu privacidad evitando subir tus fotografías personales a GitHub
+dataset_proyecto/
+dataset_mi_rostro_video/
+DATABASE_EXTRACTOR/dataset_mi_rostro_video/
+DATABASE_EXTRACTOR/*.jpg
+DATABASE_EXTRACTOR/*.jpeg
+DATABASE_EXTRACTOR/*.png
+DATABASE_EXTRACTOR/*.bmp
+DATABASE_EXTRACTOR/*.webp
+
+# --- 5. VIDEOS FUENTE Y ARCHIVOS MULTIMEDIA PESADOS ---
+# GitHub tiene un límite estricto de 100 MB y advierte a partir de 50 MB
+*.MTS
+*.mts
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# --- 6. ARCHIVOS DE CONFIGURACIÓN SENSIBLE Y SECRETOS ---
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+credentials.json
+secrets.json
+
+# --- 7. BASURA Y TEMPORALES DE SISTEMA OPERATIVO ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- 8. CONFIGURACIONES DE EDITORES E IDEs ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# --- 9. LOGS Y ARCHIVOS TEMPORALES ---
+*.log
+*.tmp
+*.bak
+
